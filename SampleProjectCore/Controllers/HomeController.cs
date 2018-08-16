@@ -10,12 +10,14 @@ namespace SampleProjectCore.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Hello Project " + DateTime.Now.ToString("ddMMyyyy HH:mm:ss");
+
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Hello Project " + DateTime.Now.ToString("ddMMyyyy HH:mm:ss");
 
             return View();
         }
